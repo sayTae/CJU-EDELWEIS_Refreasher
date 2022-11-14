@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+
+  "name": "CJU-EDELWEISS_Refreasher",
+  "description": "청주대학교 에델바이스 사이트를 재구성하는 익스텐션입니다.",
+  "version": "1.0",
+
+  "action": {
+    "default_icon": "icon.ico",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://hive.cju.ac.kr/usr/member/stu/dash/detail.do"],
+
+      "js": ["jquery.js", "bg.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
